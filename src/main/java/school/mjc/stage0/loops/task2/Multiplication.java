@@ -10,10 +10,14 @@ public class Multiplication {
 				}
     		}
 			if (multiplyByAndToInclusive < 0) {
-				while (counter >= -multiplyByAndToInclusive) {
+				while (counter <= (multiplyByAndToInclusive * (-1))) {
 					System.out.println(counter * multiplyByAndToInclusive);
 					counter++;
 					}
 				}
     }
+    public static void main(String[] args) {
+		Multiplication checking = new Multiplication();
+		checking.printMultiplied(-5);
+	}
 }
