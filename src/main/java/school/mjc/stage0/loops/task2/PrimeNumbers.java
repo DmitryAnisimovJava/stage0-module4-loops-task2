@@ -2,20 +2,26 @@ package school.mjc.stage0.loops.task2;
 
 public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
-    	
-    	while (printToInclusive > 0) {
+    	int idiotic = printToInclusive;
+    	printToInclusive = 2;
+    	while (idiotic >= printToInclusive) {
     		boolean flag = true;
-    		int counter = printToInclusive - 1;
-    		while (counter > 1) {
-    			if (printToInclusive % counter == 0) {
+    		int counter = 2;
+    		while (counter < printToInclusive) {
+    			if (printToInclusive % counter == 0 && counter != 2) {
 					flag = false;
 					}
-    			counter--;
+    			counter++;
 				} 
     		if (flag) {
 				System.out.println(printToInclusive);
     		}
-    		printToInclusive--;
+    		printToInclusive++;
     	}
-    } 
+    }
+    public static void main(String[] args) {
+		PrimeNumbers myPrimeNumbers = new PrimeNumbers();
+		myPrimeNumbers.printPrimeNumbers(31);
+	}
+  
 }
