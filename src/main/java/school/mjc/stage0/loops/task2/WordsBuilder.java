@@ -8,10 +8,6 @@ public class WordsBuilder {
     		resultingString = resultingString + chars[i];
     		i++;
 		}
-    	System.out.println(resultingString);
+    	System.out.print(resultingString);
     }
-    public static void main(String[] args) {
-		WordsBuilder myWords = new WordsBuilder();
-		myWords.buildPhrase('l', 'o', 'o', 'p', 's', ' ', 'a', 'r', 'e', ' ', 'c', 'o', 'o', 'l');
-	}
 }

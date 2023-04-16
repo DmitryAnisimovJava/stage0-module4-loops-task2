@@ -10,11 +10,12 @@ public class PrimeNumbers {
     			if (printToInclusive % counter == 0) {
 					flag = false;
 					}
-    			if (flag) {
-					System.out.println(printToInclusive);
-				}
+    			counter--;
+				} 
+    		if (flag) {
+				System.out.println(printToInclusive);
     		}
     		printToInclusive--;
     	}
-    }
+    } 
 }
